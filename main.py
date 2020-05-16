@@ -8,8 +8,6 @@ from config import BOT_TOKEN
 bot = Bot(BOT_TOKEN, parse_mode="HTML")
 dp = Dispatcher(bot)
 
-import urllib3.contrib.pyopenssl
-urllib3.contrib.pyopenssl.inject_into_urllib3()
 
 if __name__ == '__main__':
     from handlers import dp, send_to_admin
